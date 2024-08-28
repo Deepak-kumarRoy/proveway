@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expandable Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <!-- Text at the top -->
+        <h1 class="title">YAY! It's BOGO</h1>
+        
+        <!-- Radio button section inside a dedicated box -->
+          <div class="card">
+          <div class="card__offer" id="discount-box1">30% <div class="card__offer-text">Off</div></div>
+          <div class="card__details" id="radio-box1">
+            <div class="card__details-main-content">
+            <input type="radio" name="expand" value="box1" onclick="expandBox('box1', 'radio-box1', 'discount-box1')">
+              <div class="card__details-text">Buy 1 Get 2
+                <div class="card__details-price">$18.00 USD</div>
+              </div> 
+            </div> 
+              <div class="card__details-content-box" id="box1">
+                <div class="card__details-dropdown-container">
+                  <!-- Size Column -->
+                  <div class="card__details-dropdown-column"> 
+                    <span></span>
+                    <span >#1</span>
+                    <span >#2</span>
+                  </div>
+                  <div class="card__details-dropdown-column">
+                    <label for="size">Size</label>
+                    <select id="size" name="size">
+                      <option value="small">S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select id="size" name="size">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                      </select>
+                  </div>
+                  
+                  <!-- Color Column -->
+                  <div class="card__details-dropdown-column">
+                    <label for="color">Color</label>
+                    <select id="color" name="color">
+                      <option value="red">Black</option>
+                      <option value="blue">Blue</option>
+                      <option value="green">Green</option>
+                    </select>
+                    <select id="color" name="color">
+                        <option value="red">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                      </select>
+                  </div>
+                </div>
+                </div>
+
+          </div>
+          </div>
+          <div class="card">
+          <div class="card__offer" id="discount-box2">30% <div class="card__offer-text">Off</div></div>
+          <div class="card__details" id="radio-box2">
+            <div class="card__details-main-content">
+            <input type="radio" name="expand" value="box2" onclick="expandBox('box2', 'radio-box2', 'discount-box2')">
+              <div class="card__details-text">Buy 2 Get 4
+                <div class="card__details-price">$24.00 USD </div>
+              </div> 
+              <div class="card__details-rating">Most Popular</div>
+            </div> 
+              <div class="card__details-content-box" id="box2">
+                  <div class="card__details-dropdown-container">
+                    <!-- Size Column -->
+                    <div class="card__details-dropdown-column"> 
+                      <span></span>
+                      <span >#1</span>
+                      <span >#2</span>
+                    </div>
+                    <div class="card__details-dropdown-column">
+                      <label for="size">Size</label>
+                      <select id="size" name="size">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                      </select>
+                      <select id="size" name="size">
+                          <option value="small">S</option>
+                          <option value="medium">M</option>
+                          <option value="large">L</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Color Column -->
+                    <div class="card__details-dropdown-column">
+                      <label for="color">Color</label>
+                      <select id="color" name="color">
+                        <option value="red">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                      </select>
+                      <select id="color" name="color">
+                          <option value="red">Black</option>
+                          <option value="blue">Blue</option>
+                          <option value="green">Green</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+          <div class="card">
+            <div class="card__offer" id="discount-box3">30% <div class="card__offer-text">Off</div></div>
+          <div class="card__details" id="radio-box3">
+              <div class="card__details-main-content">
+            <input type="radio" name="expand" value="box3" onclick="expandBox('box3', 'radio-box3', 'discount-box3')"> 
+              <div class="card__details-text">Buy 3 Get 6 &nbsp;<span class="card__details-Offer-text">10% Off</span>
+                <div class="card__details-price">$36.00 USD &nbsp;<del class="card__details-strikethrough">$10.00 USD</del></div>
+              </div >
+            </div>
+              <div class="card__details-content-box" id="box3">
+                <div class="card__details-dropdown-container">
+                  <!-- Size Column -->
+                  <div class="card__details-dropdown-column"> 
+                    <span></span>
+                    <span >#1</span>
+                    <span >#2</span>
+                  </div>
+                  <div class="card__details-dropdown-column">
+                    <label for="size">Size</label>
+                    <select id="size" name="size">
+                      <option value="small">S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select id="size" name="size">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                      </select>
+                  </div>
+                  
+                  <!-- Color Column -->
+                  <div class="card__details-dropdown-column">
+                    <label for="color">Color</label>
+                    <select id="color" name="color">
+                      <option value="red">Black</option>
+                      <option value="blue">Blue</option>
+                      <option value="green">Green</option>
+                    </select>
+                    <select id="color" name="color">
+                        <option value="red">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                      </select>
+                  </div>
+                </div>
+             
+                </div>
+          </div>
+          </div>
+          <div class="info-row">
+            <span class="free-delivery">Free Delivery</span>
+            <span class="total-price">Total : $18.00 USD</span>
+          </div>
+                
+        <!-- Button at the end -->
+        <div class="button-container">
+          <button class="action-button"> + Add to Cart</button>
+        </div>
+        <div class="card__footer">
+            Powered by <span class="card__footer-text">Pumper</span>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>

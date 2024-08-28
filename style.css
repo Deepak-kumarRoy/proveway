@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 442px;
+  background-color: white;
+  padding: 28px 50px;
+}
+
+/* Text styling at the top */
+.title {
+  font-size: 24px;
+  color: #FF6B82;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card__details-text{
+font-weight: 400;
+color: #000000;
+font-size: 14.46px;
+margin-left: 17.77px;
+}
+
+.card__details-price {
+  display: block;
+  color: #000000;
+  font-weight: 600;
+  font-size: 14.46px;
+  margin-top: 5px; 
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.free-delivery {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FF6B82;
+  margin-bottom: 20px;
+}
+
+.total-price {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.card__details {
+  display: flex;
+  align-items: center;
+  width: 272px;
+  min-height: 74px;
+  max-height: 172px;
+  border-radius: 0px 10px 10px 0px;
+  padding: 20px 0px 20px 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card__details-main-content{
+  display: flex;
+  align-items: center;
+}
+
+.active-card__details {
+  background-color: #fffcfc;
+  border: 2px solid #FF6B82;
+  display: block;
+  width: 300px;
+  min-height: 74px;
+  max-height: 172px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+.card__details-rating{
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 30px;
+  color:#FF6B82;
+  ;
+}
+
+.card__details-content-box {
+  display: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.action-button {
+  background-color: #ff6f6f;
+  border: 0;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 342px; 
+  height: 40px
+}
+
+.card__footer {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 7px;
+  color: #D4D4D4; 
+}
+
+.card__footer-text {
+  color: #ff6f6f; 
+  font-size: 12px;
+}
+
+.card__details-strikethrough{
+  color: #888;
+  font-size: 11px;
+}
+
+.card__offer {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #FF6B82;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 16px; 
+  font-weight: 600;
+  flex-direction: column; 
+}
+
+.card__offer-text {
+  font-weight: 500;
+  font-size: 18px; 
+  margin-top: 5px; 
+}
+
+.card__details-Offer-text{
+  font-weight: 400;
+  color: #FFFFFF; 
+  background-color: #ff6f6f;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card__details-dropdown-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card__details-dropdown-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__details-dropdown-column label {
+  margin-bottom: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.card__details-dropdown-column span {
+  margin-bottom: 28px;
+  font-size: 12px;
+}
+
+select {
+  margin-top: 5px;
+  margin-left: 3px;
+  padding: 5px;
+  width: 72px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+
+/* Ensure custom styling is applied */
+input[type="radio"] {
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border-color: #ff6f6f;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ff6f6f;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
